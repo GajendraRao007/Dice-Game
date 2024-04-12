@@ -21,3 +21,93 @@
    cursor: pointer;
 }
 
+.play-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.number{
+width: 72px;
+height: 72px;
+padding: 18px 0px 18px 0px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+font-size: 24px;
+color: black;
+border:1px solid black;
+margin: 0 14px;
+background-color: white;
+cursor: pointer;
+}
+
+.scores{
+    font-size: 80px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.scores-title{
+    font-size: 24px;
+}
+
+.scores-box{
+    text-align: center;
+}
+
+.select-num{
+    font-size: 24px;
+    float: right;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.dice{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.reset-btn{
+   width: 300px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 10px 18px 10px 18px;
+   font-size: 16px;
+   font-weight: 600;
+   background-color: white;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.show-rules-btn{
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px 18px 10px 18px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rules{
+    background-color: #FBF1F1;
+    width: 770px;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+.NotSelected{
+    font-size: 24px;
+    margin-left: 160px;
+    color: #FF0C0C;
+}
