@@ -44,6 +44,11 @@ background-color: white;
 cursor: pointer;
 }
 
+.selected {
+    background-color: black;
+    color: white;
+}
+
 .scores{
     font-size: 80px;
     font-weight: 500;
@@ -65,6 +70,7 @@ cursor: pointer;
     margin-top: 20px;
 }
 
+
 .dice{
     width: 300px;
     display: flex;
@@ -74,6 +80,8 @@ cursor: pointer;
     text-align: center;
     font-size: 14px;
 }
+
+
 
 .reset-btn{
    width: 300px;
