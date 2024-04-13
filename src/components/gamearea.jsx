@@ -1,10 +1,10 @@
 import DiceImage from '../Images/dicesimg.png';
 import Dice1 from '../Images/dice_1.png';
-import Dice2 from '../Images/dice_2.png';
-import Dice3 from '../Images/dice_3.png';
-import Dice4 from '../Images/dice_4.png';
-import Dice5 from '../Images/dice_5.png';
-import Dice6 from '../Images/dice_6.png';
+// import Dice2 from '../Images/dice_2.png';
+// import Dice3 from '../Images/dice_3.png';
+// import Dice4 from '../Images/dice_4.png';
+// import Dice5 from '../Images/dice_5.png';
+// import Dice6 from '../Images/dice_6.png';
 
 import { useState } from 'react';
 
@@ -12,6 +12,12 @@ import { useState } from 'react';
 function GameArea(){
 
     let [showGameArea,setGameArea] = useState(true);
+
+    let [showRules, setShowRules] = useState(true);
+
+    let showRulesbox = ()=>{
+       setShowRules(!showRules)
+    }
 
     let playGame = ()=>{
         setGameArea(false)
@@ -56,16 +62,20 @@ function GameArea(){
             <img src={Dice1} alt="" />
             <h1>Click on Dice to roll</h1>
             <button className='reset-btn'>Reset Score</button>
-            <button className='show-rules-btn'>Show Rules</button>
+            <button className='show-rules-btn' onClick={showRulesbox}>Show Rules</button>
         </div>
 
-        <div className='rules'>
+        {showRules && (
+
+            <div className='rules'>
             <h1 className='rules-title'>How to play dice game</h1>
             <p>Select any number</p>
             <p>Click on dice image</p>
             <p>after click on  dice  if selected number is equal to dice number you will get same point as dice </p>
             <p>if you get wrong guess then  2 point will be dedcuted </p>
         </div>
+
+        )}
 
         </>
     )
